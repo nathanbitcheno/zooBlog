@@ -1,0 +1,14 @@
+<aside class="doc-nav">
+    <div class="sticky">
+    {% assign sorted = site.categories | sort %}
+    {% for category in sorted %}
+      <h5>{{ category[0]| remove: '1' | remove: '2' | remove: '3' | remove: '4' | remove: '5'  | remove: '6' | remove: '.' }}</h5>
+      <ul>
+        {% assign subsorted = category[1] | sort: order %}
+        {% for doc in subsorted %}
+            <li></li><a {% if doc.url == page.url %} class="active"{% endif %} href="{{ doc.url }}">{{ doc.title }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+    </div>
+</aside>
