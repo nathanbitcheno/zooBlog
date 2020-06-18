@@ -6,7 +6,7 @@
     <div class="home-banner">
         <h1>{{ page.banner-title }}</h1>
         <p>{{ page.banner-subtitle }}</p>
-        <img src="{{ page.banner-image }}" alt="zooBlog">
+        <img src="{{ site.baseurl }}{{ page.banner-image }}" alt="zooBlog">
     </div>    
     <div class="wrapper"> 
         <h1>{{ title }}</h1>
@@ -17,12 +17,12 @@
                     <p>{{ page.panel1-text }}</p>
                 </div>
                 <div class="image">
-                    <img src="{{ page.panel1-image }}">
+                    <img src="{{ site.baseurl }}{{ page.panel1-image }}">
                 </div>
             </div>   
             <div class="panel right-panel">
                 <div class="image">
-                    <img src="{{ page.panel2-image }}">
+                    <img src="{{ site.baseurl }}{{ page.panel2-image }}">
                 </div>
                 <div class="text">
                     <h2>{{ page.panel2-heading }}</h2>
