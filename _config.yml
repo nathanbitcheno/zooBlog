@@ -21,7 +21,7 @@
 title: zooBlog
 email: zooblog@zooblog.com
 description: Documentation for a the zoo-blog environment. A blogging platform specifically for zoo-keepers.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "zooBlog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: happyHippo
 github_username:  nathanbitcheno
