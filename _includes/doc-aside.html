@@ -6,7 +6,7 @@
       <ul>
         {% assign subsorted = category[1] | sort: order %}
         {% for doc in subsorted %}
-            <li></li><a {% if doc.url == page.url %} class="active"{% endif %} href="{{ doc.url }}">{{ doc.title }}</a></li>
+            <li></li><a {% if doc.url == page.url %} class="active"{% endif %} href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
         {% endfor %}
       </ul>
     {% endfor %}
