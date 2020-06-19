@@ -1,11 +1,16 @@
 <!--{% assign current = page.url | downcase | split: '/' %}-->
 <nav>
+  <div class="navwrap">
+    <div class="site-icon">
+      <a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/assets/images/zoo-icon.png" width="50px"></a>
+    </div>
     <div class="topnav" id="myTopnav">
         {% for nav in site.data.navigation %}
         <a {% if nav.url == page.url %} class="active"{% endif %} id="myLinks" href="{{ site.baseurl }}{{ nav.url }}">{{ nav.text }}</a>
       {% endfor %}
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="topNav()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
+  </div>
 </nav>

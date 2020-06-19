@@ -1,4 +1,4 @@
-<aside class="doc-nav">
+<aside class="doc-nav" id="myDocnav">
     <div class="sticky">
     {% assign sorted = site.categories | sort %}
     {% for category in sorted %}
@@ -6,9 +6,12 @@
       <ul>
         {% assign subsorted = category[1] | sort: order %}
         {% for doc in subsorted %}
-            <li></li><a {% if doc.url == page.url %} class="active"{% endif %} href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+            <li><a {% if doc.url == page.url %} class="active"{% endif %} href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
         {% endfor %}
       </ul>
     {% endfor %}
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      {{ page.title }}<i class="fa fa-chevron-down fa-lg"></i>
+    </a>
     </div>
 </aside>
