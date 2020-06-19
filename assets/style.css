@@ -95,7 +95,7 @@ h3.card, p.card {
     line-height: 2em;
     color: #333;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 812px) {
     .flexpanel {
         width: 100%;
         flex-direction: column;
@@ -115,7 +115,7 @@ h3.card, p.card {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 812px) {
     .left-panel .text {
         float: none;
         display: block;
@@ -171,7 +171,7 @@ footer .container {
 footer .container .col{
     flex: 1;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 812px) {
     footer .container {
         width: 100%;
         flex-direction: column;
@@ -204,7 +204,7 @@ footer .container ul li {
     border-top: 1px solid #e7e7e7;
     padding: 10px 0;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 812px) {
     footer {
         flex-direction: column;
     }
@@ -269,7 +269,7 @@ footer .container ul li {
   }
 
  
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 812px) {
     .doc-nav a, h5, ul {display: none;}
     .doc-nav a.icon {
       float: right;
@@ -278,7 +278,7 @@ footer .container ul li {
     }
   }
   
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 812px) {
     .doc-nav {display: block; width: 100%; border: 0}
     .doc-nav.responsive {position: relative;}
     .doc-nav.responsive a.icon {
@@ -353,7 +353,7 @@ nav {
   }
 
   /* When the screen is less than 600 pixels wide, hide all links. Show the hamburger */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 812px) {
     .topnav a {display: none;}
     .topnav a.icon {
       float: right;
@@ -362,7 +362,7 @@ nav {
   }
   
   /* Topnav gets the responsive class via JS. This styles the responsive version.*/
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 812px) {
     .topnav {display: block;}
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
