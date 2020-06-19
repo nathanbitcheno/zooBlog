@@ -10,8 +10,11 @@ panel1-heading: "We've got Hippos"
 panel1-image: /assets/images/zooblog-logo.png
 panel1-text: "Synchronise zooBlog with your Jekyll site on GitHub, Bitbucket or Dropbox. When developers commit changes, zooBlog pulls the repository and rebuilds your site. Changes editors make on zooBlog are committed back to your repository."
 panel2-heading: "That's right, Hippos!"
-panel2-image: /assets/images/zooblog-logo.png
+panel2-image: /assets/images/another-hippo.png
 panel2-text: "Synchronise zooBlog with your Jekyll site on GitHub, Bitbucket or Dropbox. When developers commit changes, zooBlog pulls the repository and rebuilds your site. Changes editors make on zooBlog are committed back to your repository."
+panel3-heading: "Ooh yeah..that's the stuff!"
+panel3-image: /assets/images/more-hippo.png
+panel3-text: "Synchronise zooBlog with your Jekyll site on GitHub, Bitbucket or Dropbox. When developers commit changes, zooBlog pulls the repository and rebuilds your site. Changes editors make on zooBlog are committed back to your repository."
 foot-card-image: /assets/images/testimonial.png
 foot-card-name: "Harold Hipman"
 foot-card-position: "Hippo Lead"

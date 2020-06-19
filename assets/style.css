@@ -85,6 +85,12 @@ h3.card, p.card {
 }
 .flexpanel .col{
     flex: 1;
+    margin: 20px;
+}
+.flexpanel p {
+    font-size: 1.2em;
+    line-height: 2em;
+    color: #333;
 }
 @media only screen and (max-width: 600px) {
     .flexpanel {
@@ -98,39 +104,14 @@ h3.card, p.card {
     .flexpanel .two {
         order: 2;
     }
+    .flexpanel p {
+        font-size: 1em;
+        line-height: 2em;
+        color: #333;
+    }
 }
-.flexpanel p {
-    font-size: 1.2em;
-    line-height: 2em;
-    color: #333;
-}
-.panel {
-    width: 100%;
-    min-height: 300px;
-    clear: both;
-    margin: 100px 0px 150px 0px;
-}
-.left-panel .text {
-    float: left;
-    max-width: 45%;
-}
-.left-panel .image {
-    float: right;
-    margin-right: 100px;
-}
-.right-panel .text {
-    float: right;
-    max-width: 45%;
-}
-.right-panel .image {
-    float: left;
-    margin-left: 100px;
-}
-.panel p {
-    font-size: 1.2em;
-    line-height: 2em;
-    color: #333;
-}
+
+
 @media only screen and (max-width: 600px) {
     .left-panel .text {
         float: none;
