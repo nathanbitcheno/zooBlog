@@ -12,7 +12,10 @@ body {
 p, a, ul li, ol li, h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.5;  
+}
+p {
+    color: #333;
 }
 h1 {
     font-size: 2em;
@@ -34,8 +37,13 @@ h5 {
     background-color: rgb(39, 153, 247);
     text-align: center;
     margin: 0px;
-    color: #fff;
     padding: 200px 0px 50px 0px;
+}
+.home-banner p, h1 {
+    color: #fff;
+}
+.home-banner p {
+    margin-bottom: 40px;
 }
 .foot-banner {
     background-color: rgba(231, 231, 231, 0.5);
@@ -70,6 +78,32 @@ h3.card, p.card {
 .quote::after {
     content: '"';
 }
+.flexpanel {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.flexpanel .col{
+    flex: 1;
+}
+@media only screen and (max-width: 600px) {
+    .flexpanel {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .flexpanel .one {
+        order: 1;
+    }
+    .flexpanel .two {
+        order: 2;
+    }
+}
+.flexpanel p {
+    font-size: 1.2em;
+    line-height: 2em;
+    color: #333;
+}
 .panel {
     width: 100%;
     min-height: 300px;
@@ -97,7 +131,32 @@ h3.card, p.card {
     line-height: 2em;
     color: #333;
 }
-
+@media only screen and (max-width: 600px) {
+    .left-panel .text {
+        float: none;
+        display: block;
+        max-width: 100%;
+    }
+    .right-panel .text {
+        float: none;
+        display: block;
+        max-width: 100%;
+    }
+    .left-panel .image  {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+    .right-panel .image  {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+}
   /* MAIN FLEX */
  .wrapper {
     display: flex;
@@ -118,6 +177,25 @@ footer {
       border-top: 10px solid rgba(231, 231, 231, 0.5);
       color: #f1f1f1;
   }
+
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+footer .container .col{
+    flex: 1;
+}
+@media only screen and (max-width: 600px) {
+    footer .container {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
 footer .container {
     max-width: 1000px;
     margin: auto;
@@ -135,13 +213,7 @@ footer .container ul li {
     font-size: .8em;
     color: #666;
 }
-footer .container > div {
-    width: 25rem;
-    padding: 20px;
-}
-footer .container .main-item {
-    width: 40rem;
-}
+
 .bottom-footer {
     width: 100%;
     text-align: center;
@@ -156,6 +228,11 @@ footer .container .main-item {
         display: block;
         width: 100%;
         margin: 10px 0px 10px 0px;
+    }
+    footer .container ul{
+        display: block;
+        list-style: none;
+        padding: 0px;
     }
 }
 
@@ -202,12 +279,12 @@ footer .container .main-item {
 .icon .fa {
     margin-left: 10px;
 }
- /* Hide the link that should open and close the topnav on small screens */
- .doc-nav .icon {
+
+.doc-nav .icon {
     display: none;
   }
 
-  /* When the screen is less than 600 pixels wide, hide all links, display hamburger */
+ 
 @media screen and (max-width: 600px) {
     .doc-nav a, h5, ul {display: none;}
     .doc-nav a.icon {
@@ -217,8 +294,7 @@ footer .container .main-item {
     }
   }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .doc-nav {display: block; width: 100%; border: 0}
     .doc-nav.responsive {position: relative;}
     .doc-nav.responsive a.icon {
@@ -292,7 +368,7 @@ nav {
     display: none;
   }
 
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  /* When the screen is less than 600 pixels wide, hide all links. Show the hamburger */
 @media screen and (max-width: 600px) {
     .topnav a {display: none;}
     .topnav a.icon {
@@ -301,7 +377,7 @@ nav {
     }
   }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  /* Topnav gets the responsive class via JS. This styles the responsive version.*/
   @media screen and (max-width: 600px) {
     .topnav {display: block;}
     .topnav.responsive {position: relative;}

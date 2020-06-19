@@ -11,24 +11,33 @@
     <div class="wrapper"> 
         <h1>{{ title }}</h1>
         <section class="main">
-            <div class="panel left-panel">
-                <div class="text">
+            <div class="flexpanel">
+                <div class="col one">
                     <h2>{{ page.panel1-heading }}</h2>
                     <p>{{ page.panel1-text }}</p>
                 </div>
-                <div class="image">
+                <div class="col two">
                     <img src="{{ site.baseurl }}{{ page.panel1-image }}">
                 </div>
             </div>   
-            <div class="panel right-panel">
-                <div class="image">
+            <div class="flexpanel">
+                <div class="col two">
                     <img src="{{ site.baseurl }}{{ page.panel2-image }}">
                 </div>
-                <div class="text">
+                <div class="col one">
                     <h2>{{ page.panel2-heading }}</h2>
                     <p>{{ page.panel2-text }}</p>
                 </div>
             </div>
+            <div class="flexpanel">
+                <div class="col one">
+                    <h2>{{ page.panel1-heading }}</h2>
+                    <p>{{ page.panel1-text }}</p>
+                </div>
+                <div class="col two">
+                    <img src="{{ site.baseurl }}{{ page.panel1-image }}">
+                </div>
+            </div>  
         </section>
     </div>
     {% include testimonial.html %}
